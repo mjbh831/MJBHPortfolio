@@ -356,7 +356,7 @@ h2{
   background-color: #FFBF42;
 }
 .cd-fixed-background.img-3 .cd-content::after {
-  background: url("../img/postitpic.png") no-repeat;
+  background: url("../img/postItpic.png") no-repeat;
   background-size: 100% auto;
 }
 .cd-fixed-background.img-4 {
@@ -458,7 +458,7 @@ h2{
     background-position: right;
   }
   .cd-fixed-background.img-3 {
-    background-image: url("../img/postitpic.png");
+    background-image: url("../img/postItpic.png");
     background-size: 55%;
     background-position: right;
   }
