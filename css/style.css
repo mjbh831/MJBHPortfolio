@@ -298,8 +298,6 @@ h2{
 
 /*---------END TEST SLIDE--------------*/
 
-
-
 .cd-fixed-background {
   position: relative;
   padding: 3em 5% 0;
@@ -426,6 +424,14 @@ h2{
   }
   .mb-icon{
     font-size: 1.3em;
+    margin-bottom: 10%;
+  }
+  .contact-info{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1%;
+    text-align: center;
+    width: 100%;
   }
 
   .cd-fixed-background .cd-content {
