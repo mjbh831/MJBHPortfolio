@@ -80,6 +80,7 @@ button{
   box-shadow: 0 0.5em 0.5em -0.4em #5CF4FF;
   transform: translateY(-0.25em);
   color: #5CF4FF;
+  cursor: pointer;
 }
 .scrolled {
   /*transition: color 100ms linear;*/
@@ -168,7 +169,7 @@ h2{
   position: absolute;
   z-index: -1;
   top:35%;
-  opacity: 15%;
+  opacity: 5%;
   overflow: hidden;
   text-align: center;
 }
@@ -190,8 +191,9 @@ h2{
   font-weight: 600;
 }
 .cd-fixed-backgroun p {
+  line-height: 1.6;
+  font-family: "Merriweather", serif;
   font-size: 1.2vw;
-  line-height: 1.8;
   padding-top: 5%;
 }
 
@@ -246,8 +248,8 @@ h2{
     text-align: center;
   }
   .cd-fixed-backgroun p {
-    font-size: 1.8rem;
-    line-height: 1.8;
+    /*font-size: 1.8rem;
+    line-height: 1.8;*/
   }
   .cd-fixed-backgroun .cd-content {
     width: 50%;
@@ -336,7 +338,7 @@ h2{
   margin: 2em auto 0;
 }
 .cd-fixed-background.img-1 {
-  background-color: #FF8575;
+  background-color: #f79432;
 }
 .cd-fixed-background.img-1 .cd-content::after {
   background: url("../../img/smartbrain-e7552d.png") no-repeat;
@@ -354,7 +356,7 @@ h2{
   background-color: #FFBF42;
 }
 .cd-fixed-background.img-3 .cd-content::after {
-  background: url("../img/postItpic.png") no-repeat;
+  background: url("../img/postitpic.png") no-repeat;
   background-size: 100% auto;
 }
 .cd-fixed-background.img-4 {
@@ -369,6 +371,13 @@ h2{
 }
 .cd-fixed-background.img-5 .cd-content::after {
   background: url("../img/tribute.png") no-repeat;
+  background-size: 100% auto;
+}
+.cd-fixed-background.img-6 {
+  background-color: #ffffff;
+}
+.cd-fixed-background.img-6 .cd-content::after {
+  background: url("../img/StateFarmSlide.png") no-repeat;
   background-size: 100% auto;
 }
 @media only screen and (min-width: 768px) {
@@ -391,9 +400,17 @@ h2{
     position: absolute;
     z-index: -1;
     top:35%;
-    opacity: 10%;
+    opacity: 5%;
     overflow: hidden;
     text-align: center;
+  }
+  #sf-header{
+    text-align: center;
+  }
+  #sf-text{
+    text-align: left;
+    font-size: 1.2vw;
+    font-weight: 400;
   }
   .smartbrain h2{
     color: #F2E6CD;
@@ -403,7 +420,12 @@ h2{
     line-height: 1.8;
     padding-top: 5%;
   }
-  
+  .footnote{
+    padding-bottom: 20px;
+  }
+  .mb-icon{
+    font-size: 1.3em;
+  }
 
   .cd-fixed-background .cd-content {
     width: 50%;
@@ -436,7 +458,7 @@ h2{
     background-position: right;
   }
   .cd-fixed-background.img-3 {
-    background-image: url("../img/postItpic.png");
+    background-image: url("../img/postitpic.png");
     background-size: 55%;
     background-position: right;
   }
@@ -447,6 +469,11 @@ h2{
   }
   .cd-fixed-background.img-5 {
     background-image: url("../img/tribute.png");
+    background-size: 55%;
+    background-position: right;
+  }
+  .cd-fixed-background.img-6 {
+    background-image: url("../img/StateFarmSlide.png");
     background-size: 55%;
     background-position: right;
   }
