@@ -154,7 +154,8 @@ li a{
   font-size: 2em;
 }
 #name{
-  font-weight: 900;
+  /*font-weight: 900;*/
+  color: #5CF4FF;
 }
 /*--------------------END header-----------*/
 
