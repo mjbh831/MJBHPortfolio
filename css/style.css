@@ -1,11 +1,17 @@
-/* -------------------------------- 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+* -------------------------------- 
 
 Primary style ^
 
 -------------------------------- */
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -50,6 +56,8 @@ button{
   margin: 0.5em;
   padding: 1em;
   color:#69FF96;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
   transition: 0.25s;
 
   &:hover,
@@ -77,8 +85,11 @@ button{
 }
 .raise:hover,
 .raise:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em #5CF4FF;
-  transform: translateY(-0.25em);
+  -webkit-box-shadow: 0 0.5em 0.5em -0.4em #5CF4FF;
+          box-shadow: 0 0.5em 0.5em -0.4em #5CF4FF;
+  -webkit-transform: translateY(-0.25em);
+      -ms-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
   color: #5CF4FF;
   cursor: pointer;
 }
@@ -87,8 +98,11 @@ button{
   color: #2E3033;
 }
 .scrolled:hover{
-  box-shadow: 0 0.5em 0.5em -0.4em #2E3033;
-  transform: translateY(-0.25em);
+  -webkit-box-shadow: 0 0.5em 0.5em -0.4em #2E3033;
+          box-shadow: 0 0.5em 0.5em -0.4em #2E3033;
+  -webkit-transform: translateY(-0.25em);
+      -ms-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
   color: #2E3033;
 }
 
@@ -103,14 +117,18 @@ Main Components
 /*--------------------header-----------*/
 
 .cd-header{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 100vh;
   position: relative;
 }
 .cd-header h1 {
-    font-size: 8em;
+    font-size: 3em;
     font-weight: 500;
     text-transform: uppercase;
     font-family: 'Titillium Web', sans-serif;  
@@ -119,14 +137,25 @@ Main Components
   width: 81%;
   height: 100%;
   color: #9C968A;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
 }
 .menu{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .initials{
   position: absolute;
@@ -136,6 +165,8 @@ Main Components
   color: #9C968A; 
 }
 .menu ul{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: fixed;
   z-index: 15;
@@ -259,14 +290,21 @@ h2{
     left: 5%;
     top: 50%;
     bottom: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
     transform: translateY(-50%);
   }
   .cd-fixed-backgroun .cd-content::after {
@@ -337,7 +375,7 @@ h2{
   margin: 2em auto 0;
 }
 .cd-fixed-background.img-1 {
-  background-color: #f79432;
+  background-color: #d83711;
 }
 .cd-fixed-background.img-1 .cd-content::after {
   background: url("../../img/smartbrain-e7552d.png") no-repeat;
@@ -437,18 +475,25 @@ h2{
   .cd-fixed-background .cd-content {
     width: 50%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction:column;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
     position: relative;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     left: 5%;
     top: 50%;
     
     -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
     transform: translateY(-50%);
   }
   .cd-fixed-background .cd-content::after {
@@ -488,6 +533,13 @@ h2{
 
 
 @media only screen and (min-width: 1048px) {
+  .cd-header h1 {
+    font-size: 8em;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;  
+}
+
   .cd-fixed-background {
     background-attachment: fixed;
   }
@@ -504,9 +556,7 @@ h2{
   top: 50%;
   bottom: auto;
   -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   transform: translateY(-50%);
   display: none;
 }
@@ -521,14 +571,12 @@ h2{
   white-space: nowrap;
   background: transparent url(../img/cd-icon-arrow.svg) no-repeat center center;
   -webkit-transition: opacity 0.2s 0s, visibility 0.2s 0s;
-  -moz-transition: opacity 0.2s 0s, visibility 0.2s 0s;
+  -o-transition: opacity 0.2s 0s, visibility 0.2s 0s;
   transition: opacity 0.2s 0s, visibility 0.2s 0s;
 }
 .cd-vertical-nav a.cd-prev {
   -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
   transform: rotate(180deg);
   margin-bottom: 10px;
 }
@@ -536,9 +584,10 @@ h2{
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.2s 0s, visibility 0s 0.2s;
-  -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+  -o-transition: opacity 0.2s 0s, visibility 0s 0.2s;
   transition: opacity 0.2s 0s, visibility 0s 0.2s;
 }
+
 @media only screen and (min-width: 1200px) {
   .cd-vertical-nav {
     display: block;
