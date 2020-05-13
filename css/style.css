@@ -60,17 +60,20 @@ button{
   -o-transition: 0.25s;
   transition: 0.25s;
 
-  &:hover,
-  &:focus {
+  &:hover{
     border: 2px solid #5CF4FF;
     color: #fff;
   }
 }
+button:focus {
+  outline:0;
+}
+
 .main-button{
   border-radius: 10px;
   padding: 1em 2em;
 }
-.pg2-button{
+/*.pg2-button{
   border-radius: 10px;
   padding: 1em 2em;
   color: #2E3033;
@@ -79,7 +82,7 @@ button{
     border: 2px solid #2E3033;
     color: #fff;
   }
-}
+}*/
 .raise{
   color: #5CF4FF;
 }
