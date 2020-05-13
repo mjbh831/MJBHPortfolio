@@ -83,8 +83,7 @@ button{
 .raise{
   color: #5CF4FF;
 }
-.raise:hover,
-.raise:focus {
+.raise:hover {
   -webkit-box-shadow: 0 0.5em 0.5em -0.4em #5CF4FF;
           box-shadow: 0 0.5em 0.5em -0.4em #5CF4FF;
   -webkit-transform: translateY(-0.25em);
